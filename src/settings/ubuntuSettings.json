@@ -215,7 +215,10 @@
             "value": "[parameters('elasticTags')]"
           }
         }
-      }
+      },
+      "tags": {
+          "Project": "Alitrack"
+        }
     }
   ],
   "outputs": {

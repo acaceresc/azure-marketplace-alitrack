@@ -4,7 +4,7 @@
   "parameters": {
     "_artifactsLocation": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/elastic/azure-marketplace/master/src/",
+      "defaultValue": "https://github.com/acaceresc/azure-marketplace-alitrack/tree/main/src/",
       "metadata": {
         "description": "The base URI where artifacts required by this template are located, including a trailing '/'"
       }
@@ -1305,7 +1305,7 @@
     "loadBalancerOptions": {
       "internal": "internal-lb-resources",
       "external": "external-lb-resources",
-      "gateway": "[concat(toLower(parameters('appGatewayTier')),'-application-gateway-resources')]"z
+      "gateway": "[concat(toLower(parameters('appGatewayTier')),'-application-gateway-resources')]"
     },
     "loadBalancerTemplateUrl": "[uri(parameters('_artifactsLocation'), concat('loadbalancers/', variables('loadBalancerOptions')[parameters('loadBalancerType')],'.json', parameters('_artifactsLocationSasToken')))]",
     "osSettingsTemplateUrl": "[uri(parameters('_artifactsLocation'), concat('settings/ubuntuSettings.json', parameters('_artifactsLocationSasToken')))]",
